@@ -287,7 +287,7 @@ if(RelaySource == 1) {
   lcd.setCursor(0,0);
   lcd.write(7);
   lcd.setCursor(2,0);
-  lcd.print("Digital:");
+  lcd.print("DAC:");
   }
 
 if(RelaySource == 2) {
@@ -409,7 +409,7 @@ if(RelayRec == 1) {
   lcd.setCursor(0,1);
   lcd.write(6);
   lcd.setCursor(2,1);
-  lcd.print("AUX 1");
+  lcd.print("Source");
   shifter.setPin(8, HIGH); 
   shifter.setPin(9, LOW);
   shifter.setPin(10, LOW); 
@@ -425,7 +425,7 @@ if(RelayRec == 2) {
   lcd.setCursor(0,1);
   lcd.write(6);
   lcd.setCursor(2,1);
-  lcd.print("AUX 2");
+  lcd.print("Aux");
   shifter.setPin(8, LOW); 
   shifter.setPin(9, HIGH);
   shifter.setPin(10, LOW); 
@@ -535,8 +535,8 @@ if(RelayRec == 8) {
 
 
 if(RelaySourceDigi == 1 && RelaySource == 1) {
-  lcd.setCursor(11,0);
-  lcd.print("Opt. 1");
+  lcd.setCursor(7,0);
+  lcd.print("Optical 1");
   }
   if (RelaySourceDigi == 1) {
   shifter.setPin(16, HIGH);
@@ -555,8 +555,8 @@ if(RelaySourceDigi == 1 && RelaySource == 1) {
   }
 
 if(RelaySourceDigi == 2 && RelaySource == 1) {
-  lcd.setCursor(11,0);
-  lcd.print("Opt. 2");
+  lcd.setCursor(7,0);
+  lcd.print("Optical 2");
   }
   if (RelaySourceDigi == 2) {
   shifter.setPin(16, LOW);
@@ -575,8 +575,8 @@ if(RelaySourceDigi == 2 && RelaySource == 1) {
   }
 
 if(RelaySourceDigi == 3 && RelaySource == 1) {
-  lcd.setCursor(11,0);
-  lcd.print("Opt. 3");
+  lcd.setCursor(7,0);
+  lcd.print("Optical 3");
   }
   if (RelaySourceDigi == 3) {
   shifter.setPin(16, LOW);
@@ -596,7 +596,7 @@ if(RelaySourceDigi == 3 && RelaySource == 1) {
 
  if(RelaySourceDigi == 4 && RelaySource == 1) {
   lcd.setCursor(11,0);
-  lcd.print("Opt. 4");
+  lcd.print("Optical 4");
   }
   if (RelaySourceDigi == 4) {
   shifter.setPin(16, LOW);
@@ -615,8 +615,8 @@ if(RelaySourceDigi == 3 && RelaySource == 1) {
   }
 
   if(RelaySourceDigi == 5 && RelaySource == 1) {
-  lcd.setCursor(11,0);
-  lcd.print("Coax. 1");
+  lcd.setCursor(7,0);
+  lcd.print("Coaxial 1");
   }
   if (RelaySourceDigi == 5) {
   shifter.setPin(16, LOW);
@@ -635,8 +635,8 @@ if(RelaySourceDigi == 3 && RelaySource == 1) {
   }
 
  if(RelaySourceDigi == 6 && RelaySource == 1) {
-  lcd.setCursor(11,0);
-  lcd.print("Coax. 2");
+  lcd.setCursor(7,0);
+  lcd.print("Coaxial 2");
   }
   if (RelaySourceDigi == 6) {
   shifter.setPin(16, LOW);
@@ -655,8 +655,8 @@ if(RelaySourceDigi == 3 && RelaySource == 1) {
   }
 
  if(RelaySourceDigi == 7 && RelaySource == 1) {
-  lcd.setCursor(11,0);
-  lcd.print("Coax. 3");
+  lcd.setCursor(7,0);
+  lcd.print("Coaxial 3");
   }
   if (RelaySourceDigi == 7) {
   shifter.setPin(16, LOW);
@@ -674,9 +674,9 @@ if(RelaySourceDigi == 3 && RelaySource == 1) {
   lcd.print("Coaxial 3");
   }
 
- if(RelaySourceDigi == 8 && RelaySource == 1) {
-  lcd.setCursor(11,0);
-  lcd.print("Coax. 4");
+  if(RelaySourceDigi == 8 && RelaySource == 1) {
+  lcd.setCursor(7,0);
+  lcd.print("Coaxial 4");
   }
   if (RelaySourceDigi == 8) {
   shifter.setPin(16, LOW);
