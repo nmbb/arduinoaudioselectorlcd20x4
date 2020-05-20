@@ -156,8 +156,8 @@ void setup() {
   lcd.print("Audio Selector");
   lcd.setCursor(3,1);
   lcd.print("Digital/Analog");
-  lcd.setCursor(4,2);
-  lcd.print("Built-In DAC");
+  lcd.setCursor(3,2);
+  lcd.print("Built-In 2 DAC");
   lcd.setCursor(7,3);
   lcd.print("V1.0a");
   delay(3000);
