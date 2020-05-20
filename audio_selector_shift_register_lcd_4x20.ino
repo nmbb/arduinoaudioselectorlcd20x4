@@ -152,10 +152,14 @@ void setup() {
   pinMode(12, OUTPUT);
   pinMode(13, OUTPUT);
  
-  lcd.setCursor(0,0);
-  lcd.print(" Audio Selector");
-  lcd.setCursor(0,2);
-  lcd.print(" V20.05.202005a");
+  lcd.setCursor(3,0);
+  lcd.print("Audio Selector");
+  lcd.setCursor(3,1);
+  lcd.print("Digital/Analog");
+  lcd.setCursor(4,2);
+  lcd.print("Built-In DAC");
+  lcd.setCursor(7,3);
+  lcd.print("V1.0a");
   delay(3000);
   lcd.clear();
 }
