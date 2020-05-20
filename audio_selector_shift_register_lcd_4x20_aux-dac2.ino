@@ -31,7 +31,7 @@ int Mute = 0;
 int Mode = 0;
 int Aux = 1;
 
-byte inp[8] = {
+byte bg1[8] = {
   B00000,
   B00000,
   B01100,
@@ -42,7 +42,7 @@ byte inp[8] = {
   B00000
   };
 
-byte inps[8] = {
+byte bg2[8] = {
 B00000,
   B00000,
   B01100,
@@ -138,8 +138,8 @@ void setup() {
 
   lcd.begin(20,4);
   lcd.backlight();
-  lcd.createChar(1, inp);
-  lcd.createChar(2, inps);
+  lcd.createChar(1, bg1);
+  lcd.createChar(2, bg2);
   lcd.createChar(3, mut);
   lcd.createChar(4, outp);
   lcd.createChar(5, upp);
@@ -151,19 +151,20 @@ void setup() {
   pinMode(MuteButtonPin, INPUT);
   pinMode(RecButtonPin, INPUT);
   pinMode(ModeButtonPin, INPUT);
+  pinMode(AuxButtonPin, INPUT);
   pinMode(11, OUTPUT);
   pinMode(12, OUTPUT);
   pinMode(13, OUTPUT);
  
   lcd.setCursor(3,0);
-  lcd.print("Audio Selector");
-  lcd.setCursor(3,1);
   lcd.print("Digital/Analog");
+  lcd.setCursor(3,1);
+  lcd.print("Audio Selector");
   lcd.setCursor(3,2);
   lcd.print("Built-In 2 DAC");
   lcd.setCursor(7,3);
-  lcd.print("V1.0a");
-  delay(3000);
+  lcd.print("V1.0b");
+  delay(4000);
   lcd.clear();
 }
 
