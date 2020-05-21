@@ -162,8 +162,8 @@ void setup() {
   lcd.print("Audio Selector");
   lcd.setCursor(3,2);
   lcd.print("Built-In 2 DAC");
-  lcd.setCursor(7,3);
-  lcd.print("V1.0b");
+  lcd.setCursor(2,3);
+  lcd.print("V1.0c (21052020)");
   delay(4000);
   lcd.clear();
 }
@@ -650,9 +650,7 @@ if(RelaySourceDigi == 3 && RelaySource == 1 && Aux ==0) {
   lcd.setCursor(0,3);
   lcd.write(6);
   lcd.setCursor(2,3);
-  lcd.print("Source");
-  lcd.write(9);
-  lcd.print("Optical 1");
+  lcd.print("Optical Out 1");
   shifter.setPin(12, HIGH); 
   shifter.setPin(13, LOW);
   shifter.setPin(14, LOW); 
@@ -664,9 +662,7 @@ if(RecDigi == 2) {
   lcd.setCursor(0,3);
   lcd.write(6);
   lcd.setCursor(2,3);
-  lcd.print("Source");
-  lcd.write(9);
-  lcd.print("Optical 2");
+  lcd.print("Optical Out 2");
   shifter.setPin(12, LOW); 
   shifter.setPin(13, HIGH);
   shifter.setPin(14, LOW); 
@@ -678,9 +674,7 @@ if(RecDigi == 3) {
   lcd.setCursor(0,3);
   lcd.write(6);
   lcd.setCursor(2,3);
-  lcd.print("Source");
-  lcd.write(9);
-  lcd.print("Coaxial");
+  lcd.print("Coaxial Out 1");
   shifter.setPin(12, LOW); 
   shifter.setPin(13, LOW);
   shifter.setPin(14, HIGH); 
@@ -692,9 +686,7 @@ if(RecDigi == 4) {
   lcd.setCursor(0,3);
   lcd.write(6);
   lcd.setCursor(2,3);
-  lcd.print("Source");
-  lcd.write(9);
-  lcd.print("DAC");
+  lcd.print("Coaxial Out 2");
   shifter.setPin(12, LOW); 
   shifter.setPin(13, LOW);
   shifter.setPin(14, LOW); 
