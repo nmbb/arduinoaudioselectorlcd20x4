@@ -163,7 +163,7 @@ void setup() {
   lcd.setCursor(3,2);
   lcd.print("Built-In 2 DAC");
   lcd.setCursor(2,3);
-  lcd.print("V1.0c (21052020)");
+  lcd.print("V2.0d (21052020)");
   delay(4000);
   lcd.clear();
 }
